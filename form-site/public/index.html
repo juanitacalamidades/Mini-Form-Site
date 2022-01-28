@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>form-site</title>
+</head>
+
+<body>
+    <h1>Mini form site</h1>
+    <form action="/registro-consulta" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="apellidos">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="correo electrónico" required>
+        <label for="telefono">Número de teléfono:</label>
+        <input type="text" name="telefono" id="telefono" placeholder="número de teléfono">
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+        <div id="radios">
+            <input type="radio" name="radiobutton" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="radiobutton" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="radiobutton" value="otro">
+            <label for="otro">Otro</label>
+        </div>
+        <label for="consulta" class="opciones">Tipo de consulta</label>
+        <select class="responses" name="consulta" id="select" required>
+            <option value="0" selected>Elegir tipo de consulta</option>
+            <option value="1" >Información</option>
+            <option value="2" >Incidencia técnica</option>
+            <option value="3" >Otros</option>
+        </select>
+        <div id="subconsulta"></div>
+
+
+
+
+        <label for="mensaje" required>Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+        <div class="checkbox">
+            <label for="checkbox">Aceptar condiciones</label>
+            <input type="checkbox" name="checkbox" required>
+        </div>
+        <button type="submit">Enviar</button>
+
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+
+</html>

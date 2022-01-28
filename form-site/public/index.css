@@ -1,0 +1,67 @@
+html {
+    background: url(http://varusa.com.mx/assets/media/bg/bg-2.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    /* opacity: 0.5; */
+}
+
+label,
+h1,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin: 40px 25% auto 25%;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5%;
+    background-color: whitesmoke;
+    color: black;
+    opacity: 0.7;
+}
+
+form,
+.opciones,
+.responses {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+#radios,
+.checkbox,
+input[type="checkbox"] {
+    margin: 10px 0 0 0;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.checkbox label {
+    margin-left: 10px;
+}
+
+input:required,
+textarea:required {
+    border: 1px solid #000;
+}
+
+input:required:invalid,
+textarea:required:invalid {
+    border: 1px solid rgb(187, 63, 63);
+}
